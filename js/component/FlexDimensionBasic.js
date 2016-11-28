@@ -1,4 +1,5 @@
 /**
+ * //flexBox 盒子模型
  * Created by liyanxi on 2016/11/28.
  */
 import React, {Component} from 'react';
@@ -27,9 +28,9 @@ export default class FlexDimensionBasic extends Component {
 const styles = StyleSheet.create({
     parent: {
         flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center'
-        // flexDirection: 'row'
+        alignItems: 'center',   //此时标记水平居中（根据次轴：即flexDirection 的垂直方向）
+        justifyContent: 'center',
+        flexDirection: 'column'
     },
     container: {
         // flex: 1,
